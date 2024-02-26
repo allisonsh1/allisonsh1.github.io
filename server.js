@@ -1,5 +1,7 @@
 const express = require('express');
 
+console.log('server startup');
+
 const app = express();
 const PORT = 8080;
 
@@ -10,7 +12,11 @@ app.use('/css', express.static('public/css'));
 
 app.use(require('./server/routes/router'));
 
+console.log('setup finished');
+
 app.listen(PORT, "0.0.0.0");
+
+console.log('app listening');
 
 /*
 app.listen(PORT, (error) => {
