@@ -20,6 +20,8 @@ const requestListener = function (req, res) {
   ipv4 = req.socket.localAddress;
 };
 
+const server = http.createServer(requestListener);
+
 app.listen(PORT, "0.0.0.0");
 console.log(`App listening @ ${ipv4}:4${PORT}`);
 
