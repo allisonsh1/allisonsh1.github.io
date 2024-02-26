@@ -10,6 +10,9 @@ app.use('/css', express.static('public/css'));
 
 app.use(require('./server/routes/router'));
 
+app.listen(PORT, "0.0.0.0");
+
+/*
 app.listen(PORT, (error) => {
     if (!error) {
         console.log(`Server running at http://localhost:${PORT}`);
@@ -17,5 +20,6 @@ app.listen(PORT, (error) => {
         console.log(`Server startup failed: ${error}`);
     }
 });
+*/
 
 module.exports = app;
