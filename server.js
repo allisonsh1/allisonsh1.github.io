@@ -1,4 +1,5 @@
 const express = require('express');
+const http = require('http');
 
 console.log('server startup');
 
@@ -14,9 +15,13 @@ app.use(require('./server/routes/router'));
 
 console.log('setup finished');
 
-app.listen(PORT, "0.0.0.0");
+let ipv4;
+const requestListener = function (req, res) {
+  ipv4 = req.socket.localAddress;
+};
 
-console.log('app listening');
+app.listen(PORT, "0.0.0.0");
+console.log(`App listening @ ${ipv4}:4${PORT}`);
 
 /*
 app.listen(PORT, (error) => {
