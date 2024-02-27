@@ -1,6 +1,5 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const ip = require('ip');
 
 const app = express();
 const PORT = 8080;
@@ -14,9 +13,9 @@ app.use(bodyParser.json());
 
 app.use(require('./server/routes/router'));
 
-app.listen(PORT, '0.0.0.0', (error) => {
+app.listen(PORT, (error) => {
     if (!error) {
-        console.log(`Server running at http://${ip.address()}:${PORT}`);
+        console.log(`Server running`);
     } else {
         console.log(`Server startup failed: ${error}`);
     }
