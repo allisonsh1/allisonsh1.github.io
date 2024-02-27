@@ -1,4 +1,5 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 
 const app = express();
 const PORT = 8080;
@@ -7,6 +8,8 @@ app.set('view engine', 'ejs');
 
 app.use('/js', express.static('public/js'));
 app.use('/css', express.static('public/css'));
+
+app.use(bodyParser.json());
 
 app.use(require('./server/routes/router'));
 
