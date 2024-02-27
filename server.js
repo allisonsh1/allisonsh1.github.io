@@ -1,8 +1,15 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const dotenv = require('dotenv');
+
+const database = require('./server/scripts/database');
 
 const app = express();
 const PORT = 8080;
+
+dotenv.config({ path: '.env'});
+
+database.connect(process.env.MONGO_URI);
 
 app.set('view engine', 'ejs');
 

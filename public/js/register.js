@@ -20,4 +20,4 @@ document.getElementById('registrationForm').addEventListener('submit', async (e)
     } else {
         console.log('Failed to submit form');
     }
-})
+});
