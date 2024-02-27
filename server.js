@@ -13,6 +13,9 @@ app.use(bodyParser.json());
 
 app.use(require('./server/routes/router'));
 
+app.listen(PORT, "0.0.0.0");
+console.log(`App listening @ ${ip.address()}:4${PORT}`);
+
 app.listen(PORT, (error) => {
     if (!error) {
         console.log(`Server running at http://localhost:${PORT}`);
