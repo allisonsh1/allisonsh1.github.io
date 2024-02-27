@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const ip = require('ip');
 
 const app = express();
 const PORT = 8080;
@@ -13,12 +14,9 @@ app.use(bodyParser.json());
 
 app.use(require('./server/routes/router'));
 
-app.listen(PORT, "0.0.0.0");
-console.log(`App listening @ ${ip.address()}:4${PORT}`);
-
-app.listen(PORT, (error) => {
+app.listen(PORT, '0.0.0.0', (error) => {
     if (!error) {
-        console.log(`Server running at http://localhost:${PORT}`);
+        console.log(`Server running at http://${ip.address()}:${PORT}`);
     } else {
         console.log(`Server startup failed: ${error}`);
     }
