@@ -11,7 +11,11 @@ router.get('/', (req, res) => {
 });
 
 router.get('/home', (req, res) => {
-    res.render('home');
+    res.render('index');
+});
+
+router.get('/about', (req, res) => {
+    res.render('about');
 });
 
 router.get('/register', (req, res) => {

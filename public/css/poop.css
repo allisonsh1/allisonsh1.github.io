@@ -76,6 +76,15 @@ nav ul li a {
     font-weight: bold;
 }
 
+nav ul li.active a.active {
+    color: #ffffff; /* Change the color to white when on that page*/
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Century Gothic', sans-serif;
+    font-weight: bold;
+}
+
+
 section {
     padding: 20px;
 }
