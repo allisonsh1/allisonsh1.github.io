@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
 const dotenv = require('dotenv');
 
 const database = require('./server/scripts/database');
@@ -18,6 +19,7 @@ app.use('/css', express.static('public/css'));
 app.use('/img', express.static('public/img'));
 
 app.use(bodyParser.json());
+app.use(cookieParser());
 
 app.use(require('./server/routes/router'));
 
