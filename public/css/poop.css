@@ -1,0 +1,56 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 00;
+    margin: 0;
+    padding: 0px;
+    text-align: left;
+}
+
+.header {
+    background-image: url('img/mathbanner.jpg'); 
+    background-size: cover; 
+    color: rgb(0, 0, 0);
+
+    padding-top: 40px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+
+    text-align: center;
+    font-family: 'Century Gothic', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.subheader {
+    background-color: #ffffff00; 
+    color: rgb(75, 151, 86);
+
+    padding-bottom: 5px;
+    padding-left: 20px;
+
+    text-align: left;
+
+    font-family: 'Garamond', serif;
+    font-weight: italic;
+    font-size: 30px;
+}
+
+.text {
+    background-color: #ffffff00; 
+    color: rgb(0, 0, 0);
+
+    padding: 20px;
+
+    text-align: left;
+
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 20px;
+}
+
+.logo-image {
+    padding-left: 5px;
+    padding-right: 5px;
+    
+    width: 100px; 
+    height: auto; 
+}

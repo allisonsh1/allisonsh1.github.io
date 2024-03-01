@@ -15,6 +15,7 @@ app.set('view engine', 'ejs');
 
 app.use('/js', express.static('public/js'));
 app.use('/css', express.static('public/css'));
+app.use('/img', express.static('public/img'));
 
 app.use(bodyParser.json());
 
