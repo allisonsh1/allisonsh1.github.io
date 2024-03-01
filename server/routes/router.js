@@ -112,7 +112,7 @@ router.post('/signup', validator.filledOut(['firstName', 'lastName', 'email', 'p
 
     cookies.create(res, { uuidv4 }, constants.UUID_COOKIE);
 
-    res.status(201).json('home');
+    res.status(201).json('');
 });
 
 router.post('/logout', async (req, res) => {
