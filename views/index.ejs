@@ -1,12 +1,36 @@
+<!-- home.ejs -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mathplex</title>
+    <link rel="stylesheet" href="/css/poop.css">
+    <title>Clover - Home</title>
 </head>
 <body>
-    <p>Mathplex</p>
-    <a href="/register">Register</a>
+    <header>
+        <%- include('heading.ejs') %> 
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <img src="img\greenbanner.png" alt="Clover Image" style="width:100%;">
+        <div class="banner-content">
+            Free math competitions for youth
+        </div>
+    </div>
+    <div class="subheader">
+        Math 4 All
+    </div>
+    <div class="text">
+        <!-- Your content goes here -->
+        <p>Welcome to our home page!</p>
+    </div>
 </body>
 </html>
