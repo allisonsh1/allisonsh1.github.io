@@ -6,16 +6,21 @@ body {
     text-align: left;
 }
 
-.header {
-    background-image: url('img/mathbanner.jpg'); 
-    background-size: cover; 
-    color: rgb(0, 0, 0);
-
-    padding-top: 40px;
-    padding-bottom: 5px;
-    padding-left: 20px;
-
+.banner {
+    position: relative;
     text-align: center;
+    color: white;
+  }
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    text-align: center; 
+    color: rgb(255, 255, 255); 
+
     font-family: 'Century Gothic', sans-serif;
     font-weight: bold;
     font-size: 50px;
@@ -48,6 +53,7 @@ body {
 }
 
 .logo-image {
+    padding-top: 10px;
     padding-left: 5px;
     padding-right: 5px;
     
