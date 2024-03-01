@@ -7,6 +7,15 @@
 </head>
 <body>
     <p>Mathplex</p>
-    <a href="/register">Register</a>
+    <% if (loggedIn) { %>
+        <p>You are logged in!</p>
+        <p>Hi <%= loggedIn.firstName %> <%= loggedIn.lastName%></p>
+        <a href="/register">Register</a>
+        <a href="/logout">Logout</a>
+    <% } else { %>
+        <p>You are not logged in</p>
+        <a href="/login">Login</a>
+        <a href="/signup">Signup</a>
+    <% } %>
 </body>
 </html>
