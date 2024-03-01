@@ -30,8 +30,9 @@ body {
     background-color: #ffffff00; 
     color: rgb(75, 151, 86);
 
-    padding-bottom: 5px;
+    padding-top: 20px;
     padding-left: 20px;
+    padding-right: 20px;
 
     text-align: left;
 
@@ -44,7 +45,8 @@ body {
     background-color: #ffffff00; 
     color: rgb(0, 0, 0);
 
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 
     text-align: left;
 
