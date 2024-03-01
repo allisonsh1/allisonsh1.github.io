@@ -30,9 +30,11 @@ router.get('/signup', auth.guestOnly, (req, res) => {
     res.render('signup');
 });
 
-router.get('/home', (req, res) => {
-    res.render('index');
+/* This route isn't needed (unless it is) so its commented out but feel free to uncomment
+router.get('/home', auth.loggedIn, (req, res) => {
+    res.render('index', { loggedIn: req.loggedIn });
 });
+*/
 
 router.get('/about', (req, res) => {
     res.render('about');
