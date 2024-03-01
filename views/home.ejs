@@ -8,7 +8,17 @@
     <title>Clover - Home</title>
 </head>
 <body>
-    <%- include('heading.ejs') %> 
+    <header>
+        <%- include('heading.ejs') %> 
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="banner">
         <img src="img\mathbanner.jpg" alt="Clover Image" style="width:100%;">
         <div class="banner-content">
