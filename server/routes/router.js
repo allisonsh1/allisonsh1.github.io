@@ -22,7 +22,7 @@ router.get('/', auth.loggedIn, (req, res) => {
     res.render('index',  { loggedIn: req.loggedIn });
 });
 
-router.get('about', auth.loggedIn, (req, res) => {
+router.get('/about', auth.loggedIn, (req, res) => {
     res.render('about',  { loggedIn: req.loggedIn });
 });
 
