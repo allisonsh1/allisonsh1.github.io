@@ -19,7 +19,11 @@ const router = express.Router();
 /* ------------------------ */
 
 router.get('/', auth.loggedIn, (req, res) => {
-    res.render('index', { loggedIn: req.loggedIn });
+    res.render('index',  { loggedIn: req.loggedIn });
+});
+
+router.get('about', auth.loggedIn, (req, res) => {
+    res.render('about',  { loggedIn: req.loggedIn });
 });
 
 router.get('/login', auth.guestOnly, (req, res) => {

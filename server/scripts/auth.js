@@ -24,9 +24,9 @@ async function loggedIn(req, res, next) {
             res.status(500).end();
             return;
         }
-        req.loggedIn = user;
+        req.loggedIn = user; // Set loggedIn property on req object
     }
-
+    req.loggedIn = req.loggedIn || null; // Ensure req.loggedIn is set, even if not found
     next();
 }
 
