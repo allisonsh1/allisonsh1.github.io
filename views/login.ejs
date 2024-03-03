@@ -3,10 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/poop.css">
     <title>Login</title>
 </head>
 <body>
-    <div>
+    <header>
+        <%- include('heading.ejs') %> 
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <% if (loggedIn) { %>
+                    <li><a href="/register">Register</a></li>
+                    <li><a href="/logout" style="color: white;">Logout</a></li>
+                <% }  else { %>
+                    <li><a href="/login" style="color: white;">Login</a></li>
+                    <li><a href="/signup" style="color: rgb(75, 151, 86)">Signup</a></li>
+                <% } %>
+            </ul>
+        </nav>
+    </header>
+    <div id="signup-form">
         <input type="text" id="email" placeholder="Email"><br>
         <input type="password" id="password" placeholder="Password"><br>
         <button id="submit">Login</button>

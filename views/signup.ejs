@@ -5,36 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/poop.css">
     <title>Signup</title>
-    <style>
-        #signup-form {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        input[type="text"],
-        input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -43,9 +13,20 @@
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About</a></li>
+                <% if (loggedIn) { %>
+                    <li><a href="/register">Register</a></li>
+                    <li><a href="/logout">Logout</a></li>
+                <% }  else { %>
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/signup" style="color: white;">Signup</a></li>
+                <% } %>
             </ul>
         </nav>
     </header>
+
+    <div class="subheader">
+        Sign up to register for events and receive info.
+    </div>
 
     <div id="signup-form">
         <input type="text" id="firstName" placeholder="First Name">
@@ -56,8 +37,10 @@
         <br>
         <input type="password" id="password" placeholder="Password">
         <br>
+        
         <button id="submit">Signup</button>
     </div>
+    
     <script src="/js/signup.js"></script>
 </body>
 </html>

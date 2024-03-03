@@ -26,6 +26,18 @@ router.get('/about', auth.loggedIn, (req, res) => {
     res.render('about',  { loggedIn: req.loggedIn });
 });
 
+router.get('/register', auth.loggedIn, (req, res) => {
+    res.render('register',  { loggedIn: req.loggedIn });
+});
+
+router.get('/signup', auth.loggedIn, (req, res) => {
+    res.render('signup',  { loggedIn: req.loggedIn });
+});
+
+router.get('/login', auth.loggedIn, (req, res) => {
+    res.render('login',  { loggedIn: req.loggedIn });
+});
+
 router.get('/login', auth.guestOnly, (req, res) => {
     res.render('login');
 });
