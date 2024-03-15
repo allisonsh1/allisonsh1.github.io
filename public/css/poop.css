@@ -26,6 +26,7 @@ body {
     height: auto; 
 }
 
+
 .subheader {
     background-color: #ffffff00; 
     color: rgb(75, 151, 86);
@@ -111,20 +112,23 @@ input[type="password"] {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-button {
+
+.button {
     width: 100%;
-    padding: 10px;
+    padding: 6px;
     background-color: rgb(125, 196, 136);
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
 
+    text-decoration: none; 
+    font-weight: normal; 
+    font-family: 'Poppins', sans-serif;
 }
-button:hover {
+
+.button:hover {
     background-color: rgb(75, 151, 86);
 }
 
@@ -133,6 +137,7 @@ button:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-top: 10px;
     
     text-align: left; 
     color: rgb(0, 0, 0);
@@ -141,36 +146,37 @@ button:hover {
     font-size: 20px;
 }
 
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* Adjust font sizes for smaller screens (e.g., mobile devices) */
 @media screen and (max-width: 768px) {
-    .banner-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    
+    .text-container {
         text-align: center; 
         color: rgb(0, 0, 0);
+        line-height: 1.2;
 
         font-family: 'Poppins', sans-serif;
         font-weight: bold;
         font-size: 7vw;
+        margin-bottom: 20px;
     }
 }
 
 /* Adjust font sizes for larger screens (e.g., tablets, desktops) */
 @media screen and (min-width: 769px) {
-    .banner-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    
+    .text-container {
         text-align: center; 
         color: rgb(0, 0, 0);
+        line-height: 1.2;
 
         font-family: 'Poppins', sans-serif;
         font-weight: bold;
         font-size: 4vw;
+        margin-bottom: 20px;
     }
 }
