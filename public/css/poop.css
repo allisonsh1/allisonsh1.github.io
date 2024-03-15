@@ -62,11 +62,6 @@ nav ul {
     padding: 0; 
 }
 
-nav ul li {
-    display: inline;
-    margin-left: 20px; 
-}
-
 nav ul li:first-child {
     margin-left: 0; 
 }
@@ -79,21 +74,8 @@ nav ul li a {
     font-weight: bold;
 }
 
-nav ul li.active a.active {
-    color: #ffffff; /* Change the color to white when on that page*/
-    text-decoration: none;
-    padding: 10px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-}
-
-
 section {
     padding: 20px;
-}
-
-.social-links {
-    color: #fff;
 }
 
 #signup-form {
@@ -165,6 +147,27 @@ input[type="password"] {
         font-size: 7vw;
         margin-bottom: 20px;
     }
+
+    nav ul li {
+        display: inline;
+        margin-left: 10px; 
+    }
+
+    .button {
+        width: 100%;
+        padding: 6px;
+        background-color: rgb(125, 196, 136);
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    
+        text-decoration: none; 
+        font-weight: normal; 
+        font-family: 'Poppins', sans-serif;
+        font-size: 10px;
+    }
 }
 
 /* Adjust font sizes for larger screens (e.g., tablets, desktops) */
@@ -178,5 +181,25 @@ input[type="password"] {
         font-weight: bold;
         font-size: 4vw;
         margin-bottom: 20px;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-left: 20px; 
+    }
+
+    .button {
+        width: 100%;
+        padding: 6px;
+        background-color: rgb(125, 196, 136);
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    
+        text-decoration: none; 
+        font-weight: normal; 
+        font-family: 'Poppins', sans-serif;
     }
 }
