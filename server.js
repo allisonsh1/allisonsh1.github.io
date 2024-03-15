@@ -21,6 +21,11 @@ app.use('/img', express.static('public/img'));
 app.use(bodyParser.json());
 app.use(cookieParser());
 
+app.get('/register', (req, res) => {
+    const googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSclb49joMPrVDO8xtCKX_wZcwWTUP8tbB8myKwzS9kUligO5w/viewform?embedded=true";
+    res.render('register', { googleFormUrl });
+});
+
 app.use(require('./server/routes/router'));
 
 app.listen(PORT, (error) => {
@@ -30,5 +35,6 @@ app.listen(PORT, (error) => {
         console.log(`Server startup failed: ${error}`);
     }
 });
+
 
 module.exports = app;
