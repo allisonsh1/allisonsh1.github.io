@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 
 app.get('/register', (req, res) => {
-    const googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSclb49joMPrVDO8xtCKX_wZcwWTUP8tbB8myKwzS9kUligO5w/viewform?embedded=true";
+    const googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSc427mJq59HSI4--9AqH8jDuKEDPJgwjT9Sw7nUT1zhzh4hkg/viewform?embedded=true";
     res.render('register', { googleFormUrl });
 });
 
