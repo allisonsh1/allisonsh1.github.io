@@ -26,36 +26,6 @@ body {
     height: auto; 
 }
 
-
-.subheader {
-    background-color: #ffffff00; 
-    color: rgb(75, 151, 86);
-
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-
-    text-align: left;
-
-    font-family: 'Garamond', serif;
-    font-weight: italic;
-    font-size: 30px;
-}
-
-.text {
-    background-color: #ffffff00; 
-    color: rgb(0, 0, 0);
-
-    padding-left: 20px;
-    padding-right: 20px;
-
-    text-align: left;
-
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-}
-
-
 nav ul {
     list-style-type: none;
     margin: 0; 
@@ -84,7 +54,9 @@ section {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 input[type="text"],
+
 input[type="password"] {
     width: 100%;
     padding: 10px;
@@ -93,6 +65,19 @@ input[type="password"] {
     border-radius: 4px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+}
+
+/* meet our team section */
+.team-member {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.team-member .bio {
+    flex: 1;
+}
+.team-member h2 {
+    margin-top: 0;
 }
 
 .button {
@@ -114,20 +99,6 @@ input[type="password"] {
     background-color: rgb(75, 151, 86);
 }
 
-.footer {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 10px;
-    
-    text-align: left; 
-    color: rgb(0, 0, 0);
-
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-}
-
 .banner-content {
     position: absolute;
     top: 50%;
@@ -135,17 +106,32 @@ input[type="password"] {
     transform: translate(-50%, -50%);
 }
 
+a[href="/"]:hover {
+    color: rgb(255, 255, 255); /* Adjust the color as needed */
+    text-decoration: none; /* Optional: Removes underline on hover */
+}
+
+a[href="/about"]:hover {
+    color: rgb(255, 255, 255); /* Adjust the color as needed */
+    text-decoration: none; /* Optional: Removes underline on hover */
+}
+
+a[href="/register"]:hover {
+    color: rgb(255, 255, 255); /* Adjust the color as needed */
+    text-decoration: none; /* Optional: Removes underline on hover */
+}
+
 /* Adjust font sizes for smaller screens (e.g., mobile devices) */
 @media screen and (max-width: 768px) {
     .text-container {
         text-align: center; 
         color: rgb(0, 0, 0);
-        line-height: 1.2;
+        line-height: 1.1;
 
         font-family: 'Poppins', sans-serif;
         font-weight: bold;
-        font-size: 7vw;
-        margin-bottom: 20px;
+        font-size: 10vw;
+        margin-bottom: 15px;
     }
 
     nav ul li {
@@ -167,6 +153,56 @@ input[type="password"] {
         font-weight: normal; 
         font-family: 'Poppins', sans-serif;
         font-size: 10px;
+    }
+
+    .subheader {
+        background-color: #ffffff00; 
+        color: rgb(75, 151, 86);
+    
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    
+        text-align: left;
+    
+        font-family: 'Garamond', serif;
+        font-weight: italic;
+        font-size: 6vw;
+    }
+
+    .text {
+        background-color: #ffffff00; 
+        color: rgb(0, 0, 0);
+    
+        padding-left: 20px;
+        padding-right: 20px;
+    
+        text-align: left;
+    
+        font-family: 'Poppins', sans-serif;
+        font-size: 4vw;
+    }
+
+    .footer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 0;
+        
+        text-align: center; 
+        color: rgb(0, 0, 0);
+    
+        font-family: 'Poppins', sans-serif;
+        font-size: 2vw;
+        width:90%
+    }
+
+    .team-member img {
+        width: 35vw;
+        height: 38vw;
+        margin-right: 20px;
+        border-radius: 8px;
     }
 }
 
@@ -201,5 +237,55 @@ input[type="password"] {
         text-decoration: none; 
         font-weight: normal; 
         font-family: 'Poppins', sans-serif;
+    }
+
+    .subheader {
+        background-color: #ffffff00; 
+        color: rgb(75, 151, 86);
+    
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    
+        text-align: left;
+    
+        font-family: 'Garamond', serif;
+        font-weight: italic;
+        font-size: 30px;
+    }
+
+    .text {
+        background-color: #ffffff00; 
+        color: rgb(0, 0, 0);
+    
+        padding-left: 20px;
+        padding-right: 20px;
+    
+        text-align: left;
+    
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+    }
+
+    .footer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 0px;
+        
+        text-align: center; 
+        color: rgb(0, 0, 0);
+    
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        width:90%;
+    }
+
+    .team-member img {
+        width: 192px;
+        height: 213px;
+        margin-right: 20px;
+        border-radius: 8px;
     }
 }
