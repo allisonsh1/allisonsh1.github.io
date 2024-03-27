@@ -37,7 +37,6 @@
         flex: 0 0 100%; /* One team member per row on smaller screens */
         flex-direction: row; /* Display bio and header horizontally */
         align-items: center; /* Center items vertically */
-        margin-left: 20px;
     }
 
     .team-member .bio {

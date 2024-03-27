@@ -125,8 +125,16 @@ body {
   }
   
   .faq-question::after {
-    content: '\25BE'; /* Unicode character for down arrow */
+    content: '\25C2'; /* Unicode character for left arrow */
     position: absolute;
+  }
+  
+  .faq-toggle:checked ~ .faq-question::after {
+    content: '\25BE'; /* Unicode character for down arrow */
+  }
+
+  .faq-question:hover {
+    color:rgb(125, 196, 136)
   }
   
   .faq-answer {
@@ -248,7 +256,7 @@ a[href="/register"]:hover {
         margin-bottom: 20px; /* Add margin between questions */
         margin-left: 20px;
         margin-right: 20px;
-      }
+    }
     
 }
 
