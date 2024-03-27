@@ -21,9 +21,27 @@ body {
     color: white;
 }
 
+.announcement {
+    background-color: rgb(125, 196, 136); 
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Garamond', serif;
+    font-weight: italic;
+    font-size: 3vw;
+}
+
 .logo-image {
     width: 100px; 
     height: auto; 
+}
+
+ul li {
+    color:rgb(0, 0, 0)
 }
 
 nav ul {
@@ -44,11 +62,7 @@ nav ul li a {
     font-weight: bold;
 }
 
-section {
-    padding: 20px;
-}
-
-#signup-form {
+/** #signup-form {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -65,20 +79,7 @@ input[type="password"] {
     border-radius: 4px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-}
-
-/* meet our team section */
-.team-member {
-    display: flex;
-    margin-bottom: 20px;
-}
-
-.team-member .bio {
-    flex: 1;
-}
-.team-member h2 {
-    margin-top: 0;
-}
+} **/
 
 .button {
     width: 100%;
@@ -105,6 +106,37 @@ input[type="password"] {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+  
+/**faq**/  
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .faq-toggle {
+    display: none;
+  }
+  
+  .faq-question {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f0f0f000;
+    position: relative;
+  }
+  
+  .faq-question::after {
+    content: '\25BE'; /* Unicode character for down arrow */
+    position: absolute;
+  }
+  
+  .faq-answer {
+    display: none;
+    padding: 10px;
+  }
+  
+  .faq-toggle:checked ~ .faq-answer {
+    display: block;
+  }
+
 
 a[href="/"]:hover {
     color: rgb(255, 255, 255); /* Adjust the color as needed */
@@ -183,6 +215,13 @@ a[href="/register"]:hover {
         font-size: 4vw;
     }
 
+    ul {
+        list-style-type: disc; 
+        color: black; 
+        font-family: 'Poppins', sans-serif; 
+        font-size: 20px;
+    }
+
     .footer {
         position: absolute;
         top: 50%;
@@ -198,12 +237,13 @@ a[href="/register"]:hover {
         width:90%
     }
 
-    .team-member img {
-        width: 35vw;
-        height: 38vw;
+    .faq-item {
+        border-bottom: 1px solid #f0f0f0;
+        margin-top: 15px;
+        margin-bottom: 20px; /* Add margin between questions */
+        margin-left: 20px;
         margin-right: 20px;
-        border-radius: 8px;
-    }
+      }
 }
 
 /* Adjust font sizes for larger screens (e.g., tablets, desktops) */
@@ -243,9 +283,9 @@ a[href="/register"]:hover {
         background-color: #ffffff00; 
         color: rgb(75, 151, 86);
     
-        padding-top: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
     
         text-align: left;
     
@@ -258,13 +298,22 @@ a[href="/register"]:hover {
         background-color: #ffffff00; 
         color: rgb(0, 0, 0);
     
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
     
         text-align: left;
     
         font-family: 'Poppins', sans-serif;
         font-size: 20px;
+    }
+
+    ul {
+        list-style-type: disc; 
+        color: black; 
+        font-family: 'Poppins', sans-serif; 
+        font-size: 20px;
+        margin-left: 10px;
+        margin-left: 10px;
     }
 
     .footer {
@@ -282,10 +331,10 @@ a[href="/register"]:hover {
         width:90%;
     }
 
-    .team-member img {
-        width: 192px;
-        height: 213px;
-        margin-right: 20px;
-        border-radius: 8px;
-    }
+    .faq-item {
+        border-bottom: 1px solid #f0f0f0;
+        margin-top: 15px;
+        margin-bottom: 20px; /* Add margin between questions */
+        margin-left: 30px;
+      }
 }

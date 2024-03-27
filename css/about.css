@@ -1,0 +1,92 @@
+.team {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    flex: 0 0 calc(50% - 20px); /* Two team members per row with 20px spacing */
+    margin-bottom: 20px;
+    display: flex; /* Ensure image and bio stay on the same line */
+}
+
+.team-member .bio {
+    flex: 1;
+    margin-left: 10px; /* Add some spacing between image and bio */
+    margin-right: 10px;
+}
+
+.resizable-image {
+    width: 100%;
+    height: auto;
+}
+
+.team-member h2 {
+    margin-top: 0;
+}
+
+
+/* phones */
+@media screen and (max-width: 768px) {
+    .image-container {
+        width: 33.33%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .team-member {
+        flex: 0 0 100%; /* One team member per row on smaller screens */
+        flex-direction: row; /* Display bio and header horizontally */
+        align-items: center; /* Center items vertically */
+        margin-left: 20px;
+    }
+
+    .team-member .bio {
+        margin-left: 10px; /* Add some spacing between image and bio */
+    }
+
+    .team-member .bio h2 {
+        font-size: 4vw;
+        margin-bottom: 5px; /* Reduce the margin between h2 and p */
+    }
+    
+    .team-member .bio p {
+        font-size: calc(4px + 2vw); /* Adjust the font size dynamically */
+        margin-top: 0; /* Reset default margin */
+    }
+}
+
+/* computers */
+@media screen and (min-width: 769px) {
+    .team-member {
+        flex: 0 0 calc(50% - 10px); /* Two team members per row with 20px spacing */
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+
+    .image-container {
+        width: 32%; /* Set the width of the image container to 50% */
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .resizable-image {
+        width: 100%; /* Set the width of the image to 50% */
+        height: auto;
+        display: block; /* Ensure image displays correctly */
+        margin: 0 auto; /* Center image horizontally */
+    }
+
+    .team-member .bio {
+        margin-left: 20px; /* Add some spacing between image and bio */
+    }
+
+    .team-member .bio h2 {
+        font-size: 20px;
+        margin-bottom: 5px; /* Reduce the margin between h2 and p */
+    }
+    
+    .team-member .bio p {
+        font-size: calc(4px + 1vw); /* Adjust the font size dynamically */
+        margin-top: 0; /* Reset default margin */
+    }
+}
