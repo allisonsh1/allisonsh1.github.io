@@ -60,6 +60,7 @@ nav ul li a {
     padding: 10px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
+    font-size: 20px;
 }
 
 /** #signup-form {
@@ -171,6 +172,10 @@ a[href="/register"]:hover {
         margin-left: 10px; 
     }
 
+    nav ul li a {
+        font-size: 15px;
+    }
+
     .button {
         width: 100%;
         padding: 6px;
@@ -244,6 +249,7 @@ a[href="/register"]:hover {
         margin-left: 20px;
         margin-right: 20px;
       }
+    
 }
 
 /* Adjust font sizes for larger screens (e.g., tablets, desktops) */

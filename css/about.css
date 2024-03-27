@@ -60,7 +60,6 @@
     .team-member {
         flex: 0 0 calc(50% - 10px); /* Two team members per row with 20px spacing */
         margin-bottom: 20px;
-        margin-left: 10px;
     }
 
     .image-container {
