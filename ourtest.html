@@ -1,0 +1,102 @@
+<!-- home.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/poop.css">
+    <link rel="stylesheet" href="/css/font.css">
+    <link rel="stylesheet" href="/css/dropdown.css">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <title>Clover - Our Test</title>
+</head>
+<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <header>
+        <heading>
+            <a href="/">
+                <img src="img\cloverlogo.png" class="logo-image" alt="Clover Image">
+            </a>
+        </heading>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/ourtest" style="color: rgb(75, 151, 86)">Our Test</a></li>
+                <li><a href="/register">Register</a></li>
+                <!-- <% if (loggedIn) { %>
+                    <li><a href="/register">Register</a></li>
+                    <li><a href="/logout">Logout</a></li>
+                <% }  else { %>
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/signup" style="color: rgb(75, 151, 86)">Signup</a></li>
+                <% } %> -->
+            </ul>
+        </nav>
+    </header>
+
+    <div class="subheader">
+        Who should compete
+    </div>
+    <div class="text">
+        Clover math competitions are open to all students in 8th grade and below.
+    </div>
+    <div class="subheader">
+        The 2 Forms
+    </div>
+    <div class = "text">
+        Because of a large interest by elementary school students in the competition, we have created a form A and a form B for the test. A is suited towards middle schoolers while B is tailored more for elementary students. Both tests are in the same format but have different difficulty levels. <b>Only students in 5th grade and under are allowed to compete in the B test. However, both middle schoolers and elementary students up for the challenge may compete in the A test. </b> To decide what form more suited for a student, we recommend the student to look over these questions to help decide what form they are more suited for.
+    </div>
+    <div class="faq-container">
+        <div class="faq-item">
+            <input type="checkbox" id="question1" class="faq-toggle">
+            <label for="question1" class="faq-question"><b>Form A</b></label>
+            <div class="faq-answer">
+                <img src="img/formAquestions.png" alt="Form A Questions">
+                <img src="img/formBanswers.png" alt = "Form A Questions">
+            </div>
+        </div>
+        <div class="faq-item">
+            <input type="checkbox" id="question2" class="faq-toggle">
+            <label for="question2" class="faq-question"><b>Form B</b></label>
+            <div class="faq-answer">
+                <img src="img/formBquestions.png" alt="Form A Questions">
+                <img src="img/formAanswers.png" alt = "Form A Questions">
+            </div>
+        </div>
+      </div>
+      
+    <div class="subheader">
+        Test format
+    </div>
+    <ul>
+        <li>30 Questions.</li>
+        <li>60 Minutes.</li>
+        <li>NO Calculator.</li>
+        <li>All questions are free-response.</li>
+        <li>The questions are in increasing difficulty.</li>
+        <li>Questions 1-10 are worth 3 points each, Questions 11-25 are worth 4 points each, and Questions 26-30 are worth 6 points each.</li>
+        <li>There is no penalty for guessing or wrong answers.</li>
+    </ul>
+    <div class="subheader">
+        About the test
+    </div>
+    <ul>
+        <li>A great opportunity to practice for the AMC and Mathcounts cycles!</li>
+        <li>There will be an optional review session right after the competition ends where the authors will go over all the problems.</li>
+    </ul>
+
+
+    <footer>
+        <link rel="stylesheet" href="/css/poop.css">
+        <div class="banner">
+            <img src="img\greenfooter.png" alt="Clover Image" style="width:100%;">
+            <div class="footer">
+                <p>Email: <a href="mailto:contactclovermath@gmail.com">contactclovermath@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
