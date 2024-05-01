@@ -180,7 +180,17 @@ a[href="/about"]:hover {
     text-decoration: none; /* Optional: Removes underline on hover */
 }
 
+a[href="/ourtest"]:hover {
+    color: rgb(255, 255, 255); /* Adjust the color as needed */
+    text-decoration: none; /* Optional: Removes underline on hover */
+}
+
 a[href="/register"]:hover {
+    color: rgb(255, 255, 255); /* Adjust the color as needed */
+    text-decoration: none; /* Optional: Removes underline on hover */
+}
+
+a[href="/archive"]:hover {
     color: rgb(255, 255, 255); /* Adjust the color as needed */
     text-decoration: none; /* Optional: Removes underline on hover */
 }
@@ -236,6 +246,20 @@ a[href="/register"]:hover {
         font-family: 'Garamond', serif;
         font-weight: italic;
         font-size: 6vw;
+    }
+
+    .subheader2 {
+        background-color: #ffffff00; 
+        color: rgb(0, 0, 0);
+    
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    
+        text-align: left;
+    
+        font-family: 'Poppins', serif;
+        font-size: 4vw;
     }
 
     .text {
@@ -329,6 +353,20 @@ a[href="/register"]:hover {
         font-family: 'Garamond', serif;
         font-weight: italic;
         font-size: 30px;
+    }
+
+    .subheader2 {
+        background-color: #ffffff00; 
+        color: rgb(0, 0, 0);
+    
+        padding-top: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+    
+        text-align: left;
+    
+        font-family: 'Poppins', serif;
+        font-size: 20px;
     }
 
     .text {
