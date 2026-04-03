@@ -420,3 +420,34 @@ a[href="/archive"]:hover {
         margin-left: 30px;
       }
 }
+
+.main-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.form-left {
+    width: 60%;
+}
+
+.form-right {
+    width: 35%;
+}
+
+.subheader3 {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.winners {
+    padding-left: 10px;
+    border-left: 3px solid rgb(75, 151, 86);
+    line-height: 1.6;
+}
